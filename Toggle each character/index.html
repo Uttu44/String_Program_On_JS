@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Toggle</title>
+</head>
+<body>
+	<div id="toggle"></div>
+
+	<script type="text/javascript">
+		
+		class ToggleString{
+
+			Toggle(){
+				let x = prompt("Enter your String To Toggle");
+				var l="";
+				for(var i=0;i<=x.length-1;i++){
+					if(x[i]>='A' && x[i]<='Z'){
+						l+=x[i].toLowerCase(); 
+						// console.log(l) 
+					}
+					if(x[i]>='a' && x[i]<='z'){
+						l+=x[i].toUpperCase();
+
+					}
+				}
+				document.getElementById('toggle').innerHTML=l;
+			}
+		}
+
+		const obj= new ToggleString;
+		obj.Toggle();
+
+	</script>
+</body>
+</html>

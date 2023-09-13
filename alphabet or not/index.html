@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alphabet</title>
+</head>
+<body>
+	<div id="Alpha"></div?>
+
+	<p id="demo"></p>
+
+
+
+	<script type="text/javascript">
+		
+
+		class Alphabet{
+			Alpha(){
+				const x=prompt("Enter the Character");
+				var p= x.charCodeAt(0);
+				console.log(p)
+				if(p>64 && p<91 || p>96 && p<123){
+					document.getElementById("Alpha").innerHTML="It's a Alphabet"
+				}
+				else{
+					document.getElementById("Alpha").innerHTML="It's not a Alphabet"
+				}
+
+			}
+		}
+
+		const obj = new Alphabet;
+		obj.Alpha();
+	</script>
+</body>
+</html>

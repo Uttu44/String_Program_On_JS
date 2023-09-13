@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Length of string</title>
+</head>
+<body>
+	<div id="Length"></div>
+
+<script type="text/javascript">
+	
+	class LengthOfString{
+		length(){
+
+
+			const x=prompt("Enter your String");
+			var z=0;
+
+			for(var i=1;i<=x.length;i++){
+				z++;
+			}
+			document.getElementById("Length").innerHTML="The Length of your Given String is "+ z ;
+
+		}
+	}
+
+	var obj = new LengthOfString;
+	obj.length();
+
+</script>
+</body>
+</html>

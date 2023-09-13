@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Number Of Vovels</title>
+</head>
+<body>
+		<div id="Vovel"></div>
+
+
+		<script type="text/javascript">
+			class NumberOfVovels{
+				Vovels(){
+					var x=prompt("Enter Your String");
+					var count=0;
+
+					for(var i=0;i<x.length;i++){
+						if(x[i]=="a" || x[i]=="e" || x[i]=="i" || x[i]=="o" || x[i]=="u" ||x[i]=="A" || x[i]=="E" || x[i]=="I" || x[i]=="O" || x[i]=="U"){
+							count++;
+						}
+					}
+
+				document.getElementById('Vovel').innerHTML=count;
+				}
+			}
+
+			let obj= new NumberOfVovels;
+			obj.Vovels();
+		</script>
+</body>
+</html>

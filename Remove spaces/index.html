@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remove Spaces</title>
+</head>
+<body>
+
+	<span>Enter Your Text</span>
+	<input type="text" name="" id="txt">
+	<input type="button" name="" value="OK" onclick="obj.RemoveSpace()">
+	<br>
+	<br>
+	<div id="remove"></div>
+
+	<script type="text/javascript">
+		
+
+		class Remove{
+			RemoveSpace(){
+
+				var x=document.getElementById("txt").value;
+				
+
+				var y="";
+				var arr = [];
+				for(var i=0;i<x.length;i++){
+					var z=x[i].charCodeAt(0);
+					if(z!=32){
+						y+=x[i];
+
+						arr.push( x[i] )
+					}
+				}
+				// alert(arr)
+				document.getElementById("remove").innerHTML=y;
+			}
+		}
+
+		var obj= new Remove;
+		// obj.RemoveSpace();
+
+	</script>
+
+</body>
+</html>

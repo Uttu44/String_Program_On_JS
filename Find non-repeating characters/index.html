@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Find non-repeating characters </title>
+</head>
+<body>
+
+	<span>Enter Your Text</span>
+	<input type="Text" name="" id="txt">
+	<input type="button" name="" value="OK" onclick="obj.ChatReapeat()">
+	<br>
+	<br>
+	<span>The Non Repeating Characters are:</span>
+	<div class="Repeating"></div>
+
+
+	<script type="text/javascript">
+		
+		class Reapeating{
+			ChatReapeat(){
+				var x= document.getElementById("txt").value;
+				var a={};
+				for(var i=0;i<x.length;i++){
+					var char= x[i];
+					if(a[x[i]]){
+						a[char]++;
+					}
+					else{
+						a[char]=1;
+					}
+				}
+				let txt = "";
+				for (let x in a) {
+					var u+=JSON.stringify(a)
+					console.log(a[x]);
+					if(a[x]==1){
+					txt+=JSON.stringify(a)
+					console.log(a)
+					}
+				};
+					document.getElementById("Repeating").innerHTML=txt;
+
+			}
+		}
+		var obj = new Reapeating
+
+	</script>
+
+</body>
+</html>

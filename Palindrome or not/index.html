@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Palindroome</title>
+</head>
+<body>
+	<div id="Palindroome">
+
+
+
+	<script type="text/javascript">
+		
+		class Palindroome{
+
+			palin(){
+				var x= prompt("Enter char your Value");
+				
+				if( x === null ){
+					// alert('cancelled')
+					var x= prompt("plase Enter vale");	
+				}
+					var z=x;
+					for(var i=0;i<x.length;i++){
+						if (z[i] != z[x.length - i - 1]) {
+	   						document.getElementById('Palindroome').innerHTML="Not Palindroome";
+	   						return 0;         			
+	           			}
+					}
+					document.getElementById('Palindroome').innerHTML="Its a Palindroome";
+				
+			}
+		}
+
+		var obj = new Palindroome;
+		obj.palin();
+	</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remove Characters</title>
+</head>
+
+<style type="text/css">
+	.Prt-msg{
+
+		background: gray;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		display: flex;
+		justify-content: center;
+		align-items:center ;
+	}
+	.Msg-Box{
+		background: #fff;;
+		text-align: center;
+		font-family: arial;
+		font-size: 16px;
+		line-height: 1.5;
+		padding: 20px;
+		border-radius:5px;	
+		box-shadow: 0 0 10px rgba(0,0,0,0,0.5);
+	}
+</style>
+<body>
+
+
+	<form>
+		<span>Enter Your String</span>
+		<input id="frm" type="text" name="" >
+		<input type="button" name="" onclick="Remove()" value="OK" >
+	</form>
+
+	<div id="Reove"></div>
+
+	<script type="text/javascript">
+
+		function Remove(){
+			var x= document.getElementById("frm").value;
+			console.log(x)
+			var res="";
+
+			for(var i=0; i<x.length;i++){
+				var q= x[i].charCodeAt(0);
+				if(q>64 && q<91 || q>96 && q<123){
+					res+=x[i];
+				}
+			}
+			document.getElementById("Reove").innerHTML=res;
+			}
+	</script>
+
+</body>
+</html>
